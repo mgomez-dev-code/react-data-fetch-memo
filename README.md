@@ -1,5 +1,6 @@
 # React Data Fetch + useMemo (Vite + TypeScript)
 
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black)](https://react-data-fetch-memo.vercel.app)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF)
@@ -9,7 +10,9 @@ A small React SPA that fetches product data from a public API and demonstrates *
 
 This project focuses on **render behavior**, **performance awareness**, and **clean separation between data fetching, UI state, and derived state**.
 
----
+## Live Demo
+
+🔗 https://react-data-fetch-memo.vercel.app
 
 ## Features
 
@@ -30,8 +33,6 @@ This project focuses on **render behavior**, **performance awareness**, and **cl
 - 🎨 Clean, responsive layout using plain CSS Grid
 - ⚛️ React **StrictMode-friendly** (expected double renders in dev)
 
----
-
 ## Why this project exists
 
 In React applications, it’s common to derive data from a base dataset  
@@ -48,8 +49,6 @@ This project demonstrates:
   - **Source state** (`products`)
   - **UI state** (search, category, sort)
   - **Derived state** (`visibleProducts`)
-
----
 
 ## Key Concepts Demonstrated
 
@@ -76,8 +75,6 @@ const visibleProducts = useMemo(() => {
 - The computation only runs **when its dependencies change**
 - Unrelated state changes do **not** trigger recomputation
 - This scales much better as datasets grow
-
----
 
 ### Memoizing derived lists (categories)
 
@@ -116,8 +113,6 @@ react-data-fetch-memo/
 └─ README.md
 ```
 
----
-
 ## Getting Started
 
 ```bash
@@ -133,8 +128,6 @@ npm run build
 npm run preview
 ```
 
----
-
 ## Notes on React StrictMode
 
 - In development, React StrictMode **intentionally double-invokes renders**
@@ -143,20 +136,14 @@ npm run preview
 
 This project is StrictMode-safe.
 
----
-
 ## Next Steps / Possible Extensions
 
 - Extract filter logic into a custom hook
 - Add pagination or virtualization for large datasets
 - Add unit tests for filtering logic
 
----
-
 This project is intentionally small and focused, aiming to demonstrate
 render behavior and memoization patterns rather than feature completeness.
-
----
 
 ## License
 
