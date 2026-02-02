@@ -21,7 +21,6 @@ const App: FC = () => {
 
   //Derived data (memoized)
   const visibleProducts = useMemo<Product[]>(() => {
-    console.log("Recomputing visibleProducts...");
     let result = products;
 
     // filter by search
