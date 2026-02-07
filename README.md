@@ -4,6 +4,7 @@
 ![React](https://img.shields.io/badge/React-18-61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/react-data-fetch-memo)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 A small React SPA that fetches product data from a public API and demonstrates **memoization of derived data** using `useMemo`.
@@ -13,6 +14,14 @@ This project focuses on **render behavior**, **performance awareness**, and **cl
 ## Live Demo
 
 🔗 https://react-data-fetch-memo.vercel.app
+
+## Deployment
+
+This project is automatically deployed using Vercel with GitHub integration.
+
+- Every push to `main` triggers a production deployment
+- Pull requests generate preview deployments
+- Build, optimization, and hosting are handled by Vercel
 
 ## Features
 
